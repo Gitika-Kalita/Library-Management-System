@@ -1,0 +1,5 @@
+create table books(book_id varchar(10) primary key,book_name varchar(50),author varchar(30),publisher varchar(30),ISBNno varchar(20),price int(10));
+create table members(member_id varchar(10) primary key,member_name varchar(30),member_type varchar(30),address varchar(50),contact_no varchar(10));
+create table borrow_info(book_id varchar(10),borrow_date date,member_id varchar(10),member_name varchar(30),member_type varchar(30),address varchar(50),contact_no varchar(10));
+create table return_info(book_id varchar(10),borrow_date date,return_date date,member_id varchar(10),member_name varchar(30),member_type varchar(30),address varchar(50),contact_no varchar(10));
+create table administrator_login(user_name varchar(10) primary key,password varchar(10));
